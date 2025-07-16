@@ -29,7 +29,7 @@ Credit aplikasi full to [Gozargah Marzban](https://github.com/Gozargah), saya ha
 
 # Instalasi
   ```html
- apt-get update && apt-get upgrade -y && apt dist-upgrade -y && update-grub && reboot
+ apt-get update && apt-get upgrade -y && apt dist-upgrade -y && update-grub && apt install wget && reboot
  ```
 Pastikan anda sudah login sebagai root sebelum menjalankan perintah dibawah
  ```html
