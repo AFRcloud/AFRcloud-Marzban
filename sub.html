@@ -703,8 +703,9 @@
     }
 </style>
 <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
-<script defer src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
 <script defer>
+    // Removed QRCode.min.js as QR code functionality is removed
+
     const sub = "{{ user.subscription_url }}"
     let fullUrl = `${window.location.origin}{{ user.subscription_url }}`;
     if (sub.startsWith("http")) {
@@ -717,7 +718,7 @@
             const defaultContent = copyCfgBtn.innerHTML;
             copyCfgBtn.innerHTML = `<lord-icon class="w-4 h-4" src="https://cdn.lordicon.com/jvihlqtw.json" trigger="loop"
                             delay="1" colors="primary:#fff,secondary:#fff">
-                        </lord-icon>` // Adjusted icon size here
+                        </lord-icon>`
             setTimeout(function () {
                 copyCfgBtn.innerHTML = defaultContent;
             }, 2000);
@@ -850,5 +851,105 @@
         switchTab('user-info');
     });
 </script>
+</head>
+
+<body class="retro-bg">
+
+<div class="main">
+    <div class="card">
+        <div class="card-header">
+            <div class="card-header-tabs">
+                <button class="card-tab active" data-tab="user-info">User Info</button>
+                <button class="card-tab" data-tab="list-config">List Config</button>
+            </div>
+        </div>
+        <div class="card-body">
+            <!-- User Info Tab Content -->
+            <div id="user-info" class="tab-content active">
+                <div class="flex flex-col md:flex-row items-center justify-center gap-6 mb-6">
+                    <div class="flex flex-col items-center">
+                        <div class="radial-progress font-bold text-2xl" id="progress__bar" style="--size:8rem; --thickness: 0.8rem;">
+                            <script>
+                                const dataLimit = "{% if not user.data_limit %}∞{% else %}{{ user.data_limit }}{% endif %}";
+                                const dataUsed = "{{ user.used_traffic }}";
+                                let usagePercentage = 0;
+                                if (dataLimit !== "∞") {
+                                    usagePercentage = ((parseFloat(dataUsed) / parseFloat(dataLimit)) * 100).toFixed(1);
+                                    if (usagePercentage > 100) usagePercentage = 100;
+                                } else {
+                                    usagePercentage = 100; // For unlimited, show 100%
+                                }
+                                document.write(usagePercentage + '%');
+                            </script>
+                        </div>
+                        <span class="package-name mt-4">{{ user.username }}</span>
+                        <span class="btn mt-2
+                            {% if user.status.value == 'active' %}status-active
+                            {% elif user.status.value == 'limited' %}status-limited
+                            {% elif user.status.value == 'expired' %}status-expired
+                            {% else %}status-disabled{% endif %}">
+                            {% if user.status.value == 'active' %}Active
+                            {% elif user.status.value == 'limited' %}Limited
+                            {% elif user.status.value == 'expired' %}Expired
+                            {% else %}Disabled{% endif %}
+                        </span>
+                    </div>
+                    <div class="flex-1 w-full md:w-auto">
+                        <div class="info-card">
+                            <h3>Data Usage</h3>
+                            <div class="value" dir="ltr">{{ user.used_traffic | bytesformat }} / {% if not user.data_limit %}∞{% else %}{{ user.data_limit | bytesformat }}{% endif %}</div>
+                        </div>
+                        <div class="info-card primary">
+                            <h3>Expiration Date</h3>
+                            <div class="value" dir="ltr">{% if not user.expire %}∞{% else %}{{ user.expire | datetime }}{% endif %}</div>
+                            {% if user.data_limit_reset_strategy.value != 'no_reset' %}
+                            <div class="sub-value mt-1">
+                                (Resets Every {% if user.data_limit_reset_strategy.value == 'year' %}Year
+                                {% elif user.data_limit_reset_strategy.value == 'month' %}Month
+                                {% elif user.data_limit_reset_strategy.value == 'week' %}Week
+                                {% elif user.data_limit_reset_strategy.value == 'day' %}Day
+                                {% endif %})
+                            </div>
+                            {% endif %}
+                        </div>
+                        <div class="info-card accent">
+                            <h3>Remaining Days</h3>
+                            <div class="value">
+                                {% if not user.expire %}∞{% else %}{% set remaining_days = ((user.expire - now().timestamp()) // (24 * 3600)) %}{{ remaining_days | int if (remaining_days | int) > -1 else 0 }}{% endif %} Days
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- List Config Tab Content -->
+            <div id="list-config" class="tab-content">
+                <button id="copyAllBtn" class="btn btn-animated mb-4">
+                    Copy All Configurations
+                </button>
+                <div class="package-list" id="configs_section">
+                    <!-- Configs will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Telegram Support Section (remains outside tabs) -->
+    <div class="card">
+        <div class="card-header">
+            <span>Support</span>
+        </div>
+        <div class="card-body text-center">
+            <p class="mb-4" style="color: var(--light-text-secondary);">If you encounter any issues, please contact our support team on Telegram.</p>
+            <a href="https://t.me/noir7r" class="whatsapp-btn">
+                <svg class="whatsapp-icon" viewBox="0 0 24 24">
+                    <path d="M12.04 2C7.03 2 3 6.03 3 11.04c0 1.85.55 3.63 1.59 5.18L3.17 21.47l5.45-1.42c1.47.8 3.17 1.25 4.38 1.25 5.01 0 9.04-4.03 9.04-9.04S17.05 2 12.04 2zm0 1.67c4.01 0 7.37 3.36 7.37 7.37S16.05 18.41 12.04 18.41c-1.23 0-2.4-.31-3.43-.89l-.25-.15-2.62.68.69-2.53-.17-.26c-.65-1.02-1-2.2-1-3.44C4.67 6.03 8.03 2.67 12.04 2.67zm-1.1 2.9c-.25 0-.5.06-.73.15-.49.18-.84.58-.84 1.07s.35.89.84 1.07c.23.09.48.15.73.15.25 0 .5-.06.73-.15.49-.18.84-.58.84-1.07s-.35-.89-.84-1.07c-.23-.09-.48-.15-.73-.15zm2.2 0c-.25 0-.5.06-.73.15-.49.18-.84.58-.84 1.07s.35.89.84 1.07c.23.09.48.15.73.15.25 0 .5-.06.73-.15.49-.18.84-.58.84-1.07s-.35-.89-.84-1.07c-.23-.09-.48-.15-.73-.15zM-2.2 2.2c-.25 0-.5.06-.73.15-.49.18-.84.58-.84 1.07s.35.89.84 1.07c.23.09.48.15.73.15.25 0 .5-.06.73-.15.49-.18.84-.58.84-1.07s-.35-.89-.84-1.07c-.23-.09-.48-.15-.73-.15zm2.2 0c-.25 0-.5.06-.73.15-.49.18-.84.58-.84 1.07s.35.89.84 1.07c.23.09.48.15.73.15.25 0 .5-.06.73-.15.49-.18.84-.58.84-1.07s-.35-.89-.84-1.07c-.23-.09-.48-.15-.73-.15z"/>
+                </svg>
+                Contact Support
+            </a>
+        </div>
+    </div>
+</div>
+</div>
 </body>
 </html>
