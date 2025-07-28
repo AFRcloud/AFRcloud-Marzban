@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ user.username }} - Sub Info</title>
+    <style>
+        .asli {
+            background: url('https://raw.githubusercontent.com/AFRcloud/AFRcloud-Marzban/main/bg.jpg') no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    </style>
+    <style>
+        /*! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com*/
+        *,
+        ::before,
+        ::after {
+            box-sizing: border-box;
+            border-width: 0;
+            border-style: solid;
+            border-color: #e5e7eb;
+        }
+        ::before,
+        ::after {
+            --tw-content: '';
+        }
+        html {
+            line-height: 1.5;
+            -webkit-text-size-adjust: 100%;
+            -moz-tab-size: 4;
+            -o-tab-size: 4;
+            tab-size: 4;
+            font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            font-feature-settings: normal;
+            font-variation-settings: normal;
+        }
+        body {
+            margin: 0;
+            line-height: inherit;
+        }
+        hr {
+            height: 0;
+            color: inherit;
+            border-top-width: 1px;
+        }
+        abbr:where([title]) {
+            -webkit-text-decoration: underline dotted;
+            text-decoration: underline dotted;
+        }
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-size: inherit;
+            font-weight: inherit;
+        }
+        a {
+            color: inherit;
+            text-decoration: inherit;
+        }
+        b,
+        strong {
+            font-weight: bolder;
+        }
+        code,
+        kbd,
+        samp,
+        pre {
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+            font-size: 1em;
+        }
+        small {
+            font-size: 80%;
+        }
+        sub,
+        sup {
+            font-size: 75%;
+            line-height: 0;
+            position: relative;
+            vertical-align: baseline;
+        }
+        sub {
+            bottom: -0.25em;
+        }
+        sup {
+            top: -0.5em;
+        }
+        table {
+            text-indent: 0;
+            border-color: inherit;
+            border-collapse: collapse;
+        }
+        button,
+        input,
+        optgroup,
+        select,
+        textarea {
+            font-family: inherit;
+            font-feature-settings: inherit;
+            font-variation-settings: inherit;
+            font-size: 100%;
+            font-weight: inherit;
+            line-height: inherit;
+            color: inherit;
+            margin: 0;
+            padding: 0;
+        }
+        button,
+        select {
+            text-transform: none;
+        }
+        button,
+        [type='button'],
+        [type='reset'],
+        [type='submit'] {
+            -webkit-appearance: button;
+            background-color: transparent;
+            background-image: none;
+        }
+        :-moz-focusring {
+            outline: auto;
+        }
+        :-moz-ui-invalid {
+            box-shadow: none;
+        }
+        progress {
+            vertical-align: baseline;
+        }
+        ::-webkit-inner-spin-button,
+        ::-webkit-outer-spin-button {
+            height: auto;
+        }
+        [type='search'] {
+            -webkit-appearance: textfield;
+            outline-offset: -2px;
+        }
+        ::-webkit-search-decoration {
+            -webkit-appearance: none;
+        }
+        ::-webkit-file-upload-button {
+            -webkit-appearance: button;
+            font: inherit;
+        }
+        summary {
+            display: list-item;
+        }
+        blockquote,
+        dl,
+        dd,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        hr,
+        figure,
+        p,
+        pre {
+            margin: 0;
+        }
+        fieldset {
+            margin: 0;
+            padding: 0;
+        }
+        legend {
+            padding: 0;
+        }
+        ol,
+        ul,
+        menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        dialog {
+            padding: 0;
+        }
+        textarea {
+            resize: vertical;
+        }
+        input::-moz-placeholder,
+        textarea::-moz-placeholder {
+            opacity: 1;
+            color: #9ca3af;
+        }
+        input::placeholder,
+        textarea::placeholder {
+            opacity: 1;
+            color: #9ca3af;
+        }
+        button,
+        [role="button"] {
+            cursor: pointer;
+        }
+        :disabled {
+            cursor: default;
+        }
+        img,
+        svg,
+        video,
+        canvas,
+        audio,
+        iframe,
+        embed,
+        object {
+            display: block;
+            vertical-align: middle;
+        }
+        img,
+        video {
+            max-width: 100%;
+            height: auto;
+        }
+        [hidden] {
+            display: none;
+        }
+        .container {
+            width: 100%;
+        }
+        @media (min-width: 640px) {
+            .container {
+                max-width: 640px;
+            }
+        }
+        @media (min-width: 768px) {
+            .container {
+                max-width: 768px;
+            }
+        }
+        @media (min-width: 1024px) {
+            .container {
+                max-width: 1024px;
+            }
+        }
+        @media (min-width: 1280px) {
+            .container {
+                max-width: 1280px;
+            }
+        }
+        @media (min-width: 1536px) {
+            .container {
+                max-width: 1536px;
+            }
+        }
+        .bg-gradient-to-r {
+            background-image: linear-gradient(to right, var(--tw-gradient-stops));
+        }
+        .from-gray-100 {
+            --tw-gradient-from: #f3f4f6;
+            --tw-gradient-to: rgb(243 244 246 / 0);
+            --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+        }
+        .via-gray-200 {
+            --tw-gradient-to: rgb(229 231 235 / 0);
+            --tw-gradient-stops: var(--tw-gradient-from), #e5e7eb, var(--tw-gradient-to);
+        }
+        .to-gray-300 {
+            --tw-gradient-to: #d1d5db;
+        }
+        .from-slate-100 {
+            --tw-gradient-from: #f1f5f9;
+            --tw-gradient-to: rgb(241 245 249 / 0);
+            --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+        }
+        .via-slate-200 {
+            --tw-gradient-to: rgb(226 232 240 / 0);
+            --tw-gradient-stops: var(--tw-gradient-from), #e2e8f0, var(--tw-gradient-to);
+        }
+        .to-slate-300 {
+            --tw-gradient-to: #cbd5e1;
+        }
+        .from-gray-600 {
+            --tw-gradient-from: #4b5563;
+            --tw-gradient-to: rgb(75 85 99 / 0);
+            --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+        }
+        .via-gray-700 {
+            --tw-gradient-to: rgb(55 65 81 / 0);
+            --tw-gradient-stops: var(--tw-gradient-from), #374151, var(--tw-gradient-to);
+        }
+        .to-gray-800 {
+            --tw-gradient-to: #1f2937;
+        }
+        .from-blue-500 {
+            --tw-gradient-from: #3b82f6;
+            --tw-gradient-to: rgb(59 130 246 / 0);
+            --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+        }
+        .via-blue-600 {
+            --tw-gradient-to: rgb(37 99 235 / 0);
+            --tw-gradient-stops: var(--tw-gradient-from), #2563eb, var(--tw-gradient-to);
+        }
+        .to-blue-700 {
+            --tw-gradient-to: #1d4ed8;
+        }
+        .bg-slate-900 {
+            background-color: #0f172a;
+        }
+        .bg-slate-950 {
+            background-color: #020617;
+        }
+        .bg-gray-100 {
+            background-color: #f3f4f6;
+        }
+        .bg-gray-700 {
+            background-color: #374151;
+        }
+        .bg-gray-800 {
+            background-color: #1f2937;
+        }
+        .bg-green-500 {
+            background-color: #22c55e;
+        }
+        .bg-red-600 {
+            background-color: #dc2626;
+        }
+        .bg-orange-600 {
+            background-color: #ea580c;
+        }
+        .bg-gray-600 {
+            background-color: #4b5563;
+        }
+        .bg-white {
+            background-color: #fff;
+        }
+        .text-white {
+            color: #fff;
+        }
+        .text-black {
+            color: #000;
+        }
+        .text-gray-200 {
+            color: #e5e7eb;
+        }
+        .text-gray-300 {
+            color: #d1d5db;
+        }
+        .text-green-500 {
+            color: #22c55e;
+        }
+        .text-red-500 {
+            color: #ef4444;
+        }
+        .text-yellow-600 {
+            color: #ca8a04;
+        }
+        .p-4 {
+            padding: 1rem;
+        }
+        .p-8 {
+            padding: 2rem;
+        }
+        .px-4 {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+        .px-6 {
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
+        .py-2 {
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+        }
+        .py-3 {
+            padding-top: 0.75rem;
+            padding-bottom: 0.75rem;
+        }
+        .py-6 {
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+        }
+        .pt-10 {
+            padding-top: 2.5rem;
+        }
+        .pb-8 {
+            padding-bottom: 2rem;
+        }
+        .mb-2 {
+            margin-bottom: 0.5rem;
+        }
+        .mb-4 {
+            margin-bottom: 1rem;
+        }
+        .mb-6 {
+            margin-bottom: 1.5rem;
+        }
+        .mb-8 {
+            margin-bottom: 2rem;
+        }
+        .mt-4 {
+            margin-top: 1rem;
+        }
+        .mt-6 {
+            margin-top: 1.5rem;
+        }
+        .mt-8 {
+            margin-top: 2rem;
+        }
+        .my-4 {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+        .mx-auto {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .flex {
+            display: flex;
+        }
+        .grid {
+            display: grid;
+        }
+        .hidden {
+            display: none;
+        }
+        .w-6 {
+            width: 1.5rem;
+        }
+        .w-8 {
+            width: 2rem;
+        }
+        .w-10 {
+            width: 2.5rem;
+        }
+        .w-full {
+            width: 100%;
+        }
+        .h-6 {
+            height: 1.5rem;
+        }
+        .h-8 {
+            height: 2rem;
+        }
+        .h-10 {
+            height: 2.5rem;
+        }
+        .max-w-xl {
+            max-width: 36rem;
+        }
+        .max-w-2xl {
+            max-width: 42rem;
+        }
+        .min-h-screen {
+            min-height: 100vh;
+        }
+        .flex-col {
+            flex-direction: column;
+        }
+        .flex-1 {
+            flex: 1 1 0%;
+        }
+        .items-center {
+            align-items: center;
+        }
+        .justify-center {
+            justify-content: center;
+        }
+        .justify-between {
+            justify-content: space-between;
+        }
+        .gap-x-2 {
+            column-gap: 0.5rem;
+        }
+        .gap-x-4 {
+            column-gap: 1rem;
+        }
+        .gap-y-2 {
+            row-gap: 0.5rem;
+        }
+        .gap-y-4 {
+            row-gap: 1rem;
+        }
+        .space-y-10 > :not([hidden]) ~ :not([hidden]) {
+            margin-top: 2.5rem;
+        }
+        .divide-x > :not([hidden]) ~ :not([hidden]) {
+            border-right-width: 1px;
+            border-left-width: 0px;
+        }
+        .divide-blue-600 > :not([hidden]) ~ :not([hidden]) {
+            border-color: #2563eb;
+        }
+        .overflow-hidden {
+            overflow: hidden;
+        }
+        .rounded-lg {
+            border-radius: 0.5rem;
+        }
+        .rounded-xl {
+            border-radius: 0.75rem;
+        }
+        .rounded-2xl {
+            border-radius: 1rem;
+        }
+        .rounded-3xl {
+            border-radius: 1.5rem;
+        }
+        .rounded-full {
+            border-radius: 9999px;
+        }
+        .shadow-md {
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+        .shadow-lg {
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+        }
+        .shadow-green-900 {
+            --tw-shadow-color: #14532d;
+            --tw-shadow: var(--tw-shadow-colored);
+        }
+        .backdrop-blur-3xl {
+            backdrop-filter: blur(64px);
+        }
+        .bg-opacity-0 {
+            --tw-bg-opacity: 0;
+        }
+        .bg-clip-padding {
+            background-clip: padding-box;
+        }
+        .backdrop-filter {
+            backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+        }
+        .text-sm {
+            font-size: 0.875rem;
+            line-height: 1.25rem;
+        }
+        .text-lg {
+            font-size: 1.125rem;
+            line-height: 1.75rem;
+        }
+        .text-xl {
+            font-size: 1.25rem;
+            line-height: 1.75rem;
+        }
+        .text-2xl {
+            font-size: 1.5rem;
+            line-height: 2rem;
+        }
+        .text-3xl {
+            font-size: 1.875rem;
+            line-height: 2.25rem;
+        }
+        .text-5xl {
+            font-size: 3rem;
+            line-height: 1;
+        }
+        .font-bold {
+            font-weight: 700;
+        }
+        .font-black {
+            font-weight: 900;
+        }
+        .font-medium {
+            font-weight: 500;
+        }
+        .font-semibold {
+            font-weight: 600;
+        }
+        .font-normal {
+            font-weight: 400;
+        }
+        .leading-none {
+            line-height: 1;
+        }
+        .tracking-tight {
+            letter-spacing: -0.025em;
+        }
+        .text-center {
+            text-align: center;
+        }
+        .relative {
+            position: relative;
+        }
+        .absolute {
+            position: absolute;
+        }
+        .inset-0 {
+            inset: 0px;
+        }
+        .left-1\/2 {
+            left: 50%;
+        }
+        .top-1\/2 {
+            top: 50%;
+        }
+        .-translate-x-1\/2 {
+            --tw-translate-x: -50%;
+            transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+        }
+        .-translate-y-1\/2 {
+            --tw-translate-y: -50%;
+            transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+        }
+        .transform {
+            transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+        }
+        .transition {
+            transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-duration: 150ms;
+        }
+        .transition-all {
+            transition-property: all;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-duration: 150ms;
+        }
+        .duration-300 {
+            transition-duration: 300ms;
+        }
+        .ease-in-out {
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .cursor-pointer {
+            cursor: pointer;
+        }
+        .inline-flex {
+            display: inline-flex;
+        }
+        .fill-white {
+            fill: #fff;
+        }
+        .focus\:ring-4:focus {
+            --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+            --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(4px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+            box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+        }
+        .focus\:outline-none:focus {
+            outline: 2px solid transparent;
+            outline-offset: 2px;
+        }
+        .focus\:ring-blue-300:focus {
+            --tw-ring-opacity: 1;
+            --tw-ring-color: rgb(147 197 253 / var(--tw-ring-opacity));
+        }
+        .hover\:bg-gradient-to-br:hover {
+            background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+        }
+        .dark\:bg-gray-700 {
+            background-color: #374151;
+        }
+        .dark\:bg-gray-800 {
+            background-color: #1f2937;
+        }
+        .dark\:text-white {
+            color: #fff;
+        }
+        .dark\:shadow-lg {
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+        }
+        .dark\:shadow-blue-800\/80 {
+            --tw-shadow-color: rgb(30 64 175 / 0.8);
+            --tw-shadow: var(--tw-shadow-colored);
+        }
+        .dark\:focus\:ring-blue-800:focus {
+            --tw-ring-opacity: 1;
+            --tw-ring-color: rgb(30 64 175 / var(--tw-ring-opacity));
+        }
+        @media (min-width: 640px) {
+            .sm\:mx-auto {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .sm\:rounded-3xl {
+                border-radius: 1.5rem;
+            }
+            .sm\:px-10 {
+                padding-left: 2.5rem;
+                padding-right: 2.5rem;
+            }
+            .sm\:py-6 {
+                padding-top: 1.5rem;
+                padding-bottom: 1.5rem;
+            }
+            .sm\:flex-row {
+                flex-direction: row;
+            }
+            .sm\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
+                margin-top: 0px;
+            }
+            .sm\:divide-x > :not([hidden]) ~ :not([hidden]) {
+                border-right-width: 1px;
+                border-left-width: 0px;
+            }
+            .sm\:divide-blue-600\/50 > :not([hidden]) ~ :not([hidden]) {
+                border-color: rgb(37 99 235 / 0.5);
+            }
+            .sm\:text-lg {
+                font-size: 1.125rem;
+                line-height: 1.75rem;
+            }
+        }
+        @media (min-width: 768px) {
+            .md\:text-2xl {
+                font-size: 1.5rem;
+                line-height: 2rem;
+            }
+            .md\:text-5xl {
+                font-size: 3rem;
+                line-height: 1;
+            }
+        }
+        @media (min-width: 1024px) {
+            .lg\:text-xl {
+                font-size: 1.25rem;
+                line-height: 1.75rem;
+            }
+        }
+        .radial-progress {
+            position: relative;
+            display: inline-grid;
+            height: var(--size);
+            width: var(--size);
+            place-content: center;
+            border-radius: 50%;
+            background: radial-gradient(farthest-side, currentColor 98%, #0000) top/var(--thickness) var(--thickness) no-repeat,
+                        conic-gradient(currentColor calc(var(--value) * 1%), #0000 0);
+            -webkit-mask: radial-gradient(farthest-side, #0000 calc(99% - var(--thickness)), #000 calc(100% - var(--thickness)));
+            mask: radial-gradient(farthest-side, #0000 calc(99% - var(--thickness)), #000 calc(100% - var(--thickness)));
+        }
+        .radial-progress:before {
+            content: "";
+            position: absolute;
+            border-radius: 50%;
+            inset: calc(50% - var(--thickness) / 2);
+            background: currentColor;
+            transform: rotate(calc(var(--value) * 3.6deg - 90deg)) translate(calc(var(--size) / 2 - 50%));
+        }
+        .modal {
+            position: fixed;
+            inset: 0;
+            z-index: 999;
+            display: grid;
+            align-items: center;
+            justify-items: center;
+            width: 100vw;
+            height: 100vh;
+            padding: 1rem;
+            opacity: 0;
+            overscroll-behavior: contain;
+            transform: scale(0.7);
+            transition-property: transform, opacity, visibility;
+            transition-duration: 200ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            pointer-events: none;
+            visibility: hidden;
+            overflow-y: auto;
+        }
+        .modal-toggle {
+            position: fixed;
+            height: 0;
+            width: 0;
+            appearance: none;
+            opacity: 0;
+        }
+        .modal-toggle:checked ~ .modal,
+        .modal:target,
+        .modal[open] {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+            transform: scale(1);
+        }
+        .modal-box {
+            max-height: calc(100vh - 5em);
+            grid-column-start: 1;
+            grid-row-start: 1;
+            width: 91.666667%;
+            max-width: 32rem;
+            scale: 0.9;
+            transform-origin: center;
+            border-radius: 1.5rem;
+            background-color: #fff;
+            padding: 1.5rem;
+            transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-duration: 200ms;
+            box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+            overflow-y: auto;
+            overscroll-behavior: contain;
+        }
+        .modal-backdrop {
+            z-index: -1;
+            grid-column-start: 1;
+            grid-row-start: 1;
+            display: grid;
+            align-self: stretch;
+            justify-self: stretch;
+            color: transparent;
+        }
+        .modal-backdrop {
+            background-color: rgb(0 0 0 / 0.3);
+            animation: modal-pop 0.2s ease-out;
+        }
+        @keyframes modal-pop {
+            0% {
+                opacity: 0;
+            }
+        }
+    </style>
+    <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+    <script defer src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+    <script defer>
+        const sub = "{{ user.subscription_url }}"
+        let fullUrl = `${window.location.origin}{{ user.subscription_url }}`;
+        if (sub.startsWith("http")) {
+            fullUrl = sub;
+        }
+
+        function copyToClipboard(e, textToCopy) {
+            if (e) {
+                const copyCfgBtn = e.target.closest('.btnCopy')
+                const defaultContent = copyCfgBtn.innerHTML;
+                copyCfgBtn.innerHTML = `<lord-icon class="w-8 h-8" src="https://cdn.lordicon.com/jvihlqtw.json" trigger="loop"
+                                delay="1" colors="primary:#fff,secondary:#fff">
+                            </lord-icon>`
+                setTimeout(function () {
+                    copyCfgBtn.innerHTML = defaultContent;
+                }, 2000);
+            }
+            const textArea = document.createElement("textarea");
+            textArea.value = textToCopy;
+            document.body.appendChild(textArea);
+            textArea.select();
+            try {
+                document.execCommand("copy");
+            } catch (err) {
+                console.error("Unable to copy text to clipboard:", err);
+            } finally {
+                document.body.removeChild(textArea);
+            }
+        }
+
+        function calculatePercentage(used, limit) {
+            const parsedUsed = parseFloat(used);
+            const parsedLimit = parseFloat(limit);
+            if (isNaN(parsedUsed) || isNaN(parsedLimit)) {
+                return 0;
+            }
+            const usagePercentage = (parsedUsed / parsedLimit) * 100;
+            return Math.min(usagePercentage, 100).toFixed(1);
+        }
+
+        function getChartColor(percentage) {
+            return percentage < 40 ? 'text-green-500' : percentage < 80 ? 'text-yellow-600' : 'text-red-500';
+        }
+
+        function openDynamicModal(title, url) {
+            var modal = document.getElementById("QrModal");
+            let qrSize = window.innerWidth > 450 ? (window.innerHeight > 450 ? 400 : window.innerHeight - 200) : window.innerHeight > 450 ? window.innerWidth - 100 : window.innerHeight - 200;
+            var modalTitle = document.getElementById("modalTitle");
+            document.getElementById("qrcode").innerHTML = ''
+            new QRCode(document.getElementById("qrcode"), {
+                text: url,
+                colorDark: "#000000",
+                colorLight: "#ffffff",
+                width: qrSize,
+                height: qrSize,
+                correctLevel: QRCode.CorrectLevel.L
+            });
+            modalTitle.innerText = title;
+            modal.click()
+        }
+
+        function extractNameFromConfigURL(url) {
+            const namePattern = /#([^#]*)/;
+            const match = url.match(namePattern);
+            if (match) {
+                const name = decodeURIComponent(match[1]);
+                return name;
+            } else if (url.startsWith("vmess://")) {
+                const encodedString = url.replace("vmess://", "");
+                const decodedString = atob(encodedString);
+                return JSON.parse(decodedString).ps
+            }
+            else {
+                return null;
+            }
+        }
+
+        function renderConfigs() {
+            const subLinks = "{{ user.links }}"
+            const configsElement = document.querySelector("#configs_section")
+            const cleanedString = subLinks.replace(/[\[\]']/g, '');
+            const configArray = cleanedString.split(', ');
+            configArray.forEach((cfg, index) => {
+                configsElement.innerHTML += `
+            <div class="flex items-center bg-slate-900 px-4 py-2 rounded-lg">
+                <span class="flex-1">${extractNameFromConfigURL(cfg)}</span>
+                <div class="flex items-center justify-start gap-x-2">
+                    <div class="w-10 h-10 overflow-hidden">
+                        <button id="copyCfg-${index}" onclick="copyToClipboard(event,'${cfg}')" type="button" class="btnCopy">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" class="w-8 h-8 fill-white">
+                                <path fill-rule="evenodd" d="M10.5 3A1.501 1.501 0 009 4.5h6A1.5 1.5 0 0013.5 3h-3zm-2.693.178A3 3 0 0110.5 1.5h3a3 3 0 012.694 1.678c.497.042.992.092 1.486.15 1.497.173 2.57 1.46 2.57 2.929V19.5a3 3 0 01-3 3H6.75a3 3 0 01-3-3V6.257c0-1.47 1.073-2.756 2.57-2.93.493-.057.989-.107 1.487-.15z" clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="w-10 h-10 overflow-hidden">
+                        <button onclick="openDynamicModal(extractNameFromConfigURL('${cfg}'), '${cfg}')" type="button" class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" class="w-8 h-8 fill-white">
+                                <path fill-rule="evenodd" d="M3 4.875C3 3.839 3.84 3 4.875 3h4.5c1.036 0 1.875.84 1.875 1.875v4.5c0 1.036-.84 1.875-1.875 1.875h-4.5A1.875 1.875 0 013 9.375v-4.5zM4.875 4.5a.375.375 0 00-.375.375v4.5c0 .207.168.375.375.375h4.5a.375.375 0 00.375-.375v-4.5a.375.375 0 00-.375-.375h-4.5zm7.875.375c0-1.036.84-1.875 1.875-1.875h4.5C20.16 3 21 3.84 21 4.875v4.5c0 1.036-.84 1.875-1.875 1.875h-4.5a1.875 1.875 0 01-1.875-1.875v-4.5zm1.875-.375a.375.375 0 00-.375.375v4.5c0 .207.168.375.375.375h4.5a.375.375 0 00.375-.375v-4.5a.375.375 0 00-.375-.375h-4.5zM6 6.75A.75.75 0 016.75 6h.75a.75.75 0 01.75.75v.75a.75.75 0 01-.75.75h-.75A.75.75 0 016 7.5v-.75zm9.75 0A.75.75 0 0116.5 6h.75a.75.75 0 01.75.75v.75a.75.75 0 01-.75.75h-.75a.75.75 0 01-.75-.75v-.75zM3 14.625c0-1.036.84-1.875 1.875-1.875h4.5c1.036 0 1.875.84 1.875 1.875v4.5c0 1.035-.84 1.875-1.875 1.875h-4.5A1.875 1.875 0 013 19.125v-4.5zm1.875-.375a.375.375 0 00-.375.375v4.5c0 .207.168.375.375.375h4.5a.375.375 0 00.375-.375v-4.5a.375.375 0 00-.375-.375h-4.5zm7.875-.75a.75.75 0 01.75-.75h.75a.75.75 0 01.75.75v.75a.75.75 0 01-.75.75h-.75a.75.75 0 01-.75-.75v-.75zm6 0a.75.75 0 01.75-.75h.75a.75.75 0 01.75.75v.75a.75.75 0 01-.75.75h-.75a.75.75 0 01-.75-.75v-.75zM6 16.5a.75.75 0 01.75-.75h.75a.75.75 0 01.75.75v.75a.75.75 0 01-.75.75h-.75a.75.75 0 01-.75-.75v-.75zm9.75 0a.75.75 0 01.75-.75h.75a.75.75 0 01.75.75v.75a.75.75 0 01-.75.75h-.75a.75.75 0 01-.75-.75v-.75zm-3 3a.75.75 0 01.75-.75h.75a.75.75 0 01.75.75v.75a.75.75 0 01-.75.75h-.75a.75.75 0 01-.75-.75v-.75zm6 0a.75.75 0 01.75-.75h.75a.75.75 0 01.75.75v.75a.75.75 0 01-.75.75h-.75a.75.75 0 01-.75-.75v-.75z" clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            `
+            })
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const progressBar = document.getElementById('progress__bar')
+            const dataLimit = "{% if not user.data_limit %}∞{% else %}{{ user.data_limit }}{% endif %}";
+            const dataUsed = "{{ user.used_traffic }}";
+            var tmpUsage = ((parseFloat(dataUsed) / parseFloat(dataLimit)) * 100).toFixed(2);
+            if (tmpUsage > 100) tmpUsage = 100;
+            const dataUsage = dataLimit == "∞" ? 100 : tmpUsage;
+            progressBar.style.setProperty("--value", dataUsage)
+            renderConfigs()
+
+            const copyButton = document.getElementById("copyBtn");
+            copyButton.addEventListener("click", function () {
+                const subLinks = "{{ user.links }}"
+                const cleanedString = subLinks.replace(/[\[\]']/g, '');
+                const configArray = cleanedString.split(', ');
+                const result = configArray.join('\n');
+                const copyText = document.querySelector('#copyText')
+                copyToClipboard(null, result)
+                const defaultContent = copyText.innerHTML;
+                copyText.innerHTML = `
+                    <div class="flex items-center justify-start gap-x-1">
+                        <lord-icon class="w-8 h-8" src="https://cdn.lordicon.com/jvihlqtw.json" trigger="loop"
+                                delay="1" colors="primary:#fff,secondary:#fff">
+                            </lord-icon>
+                            <span>Copied</span>
+                        </div>
+                `
+                setTimeout(function () {
+                    copyText.innerHTML = defaultContent;
+                }, 3000);
+            });
+        })
+    </script>
+</head>
+
+<body>
+    <input type="checkbox" id="QrModal" class="modal-toggle" />
+    <div style="direction: ltr;" class="modal">
+        <div class="modal-box">
+            <h3 class="text-lg font-bold" id="modalTitle">Dynamic Title</h3>
+            <div class="flex items-center justify-center mt-8 mb-4 bg-white py-4 rounded-3xl" id="qrcode"></div>
+            <p class="text-center" id="modalContent">Click outside to close</p>
+        </div>
+        <label class="modal-backdrop" for="QrModal">Close</label>
+    </div>
+
+    <div class="relative flex min-h-screen flex-col justify-center overflow-hidden asli py-6 transition">
+        <div class="relative px-6 pt-10 pb-8 shadow-lg rounded-none sm:mx-auto sm:rounded-3xl sm:px-10 bg-clip-padding backdrop-filter backdrop-blur-3xl bg-opacity-0 w-full max-w-2xl">
+            <div class="mx-auto max-w-xl">
+                <!-- User Profile Section -->
+                <div class="flex mb-8 bg-gradient-to-r from-gray-100 via-gray-200 to-gray-300 dark:from-gray-600 dark:via-gray-700 dark:to-gray-800 rounded-3xl p-8 dark:text-white text-black flex-col sm:flex-row space-y-10 sm:space-y-0 sm:divide-x sm:divide-blue-600/50">
+                    <div class="flex flex-col items-center py-3 sm:pr-9" style="flex-basis: 33.333333%;">
+                        <div class="radial-progress font-black text-2xl text-green-500" id="progress__bar" style="--size:9rem; --thickness: 1.2rem;">
+                            <script>
+                                const dataLimit = "{% if not user.data_limit %}∞{% else %}{{ user.data_limit }}{% endif %}";
+                                const dataUsed = "{{ user.used_traffic }}";
+                                var tmpUsage = ((parseFloat(dataUsed) / parseFloat(dataLimit)) * 100).toFixed(2);
+                                if (tmpUsage > 100) tmpUsage = 100;
+                                const dataUsage = dataLimit == "∞" ? 0 : tmpUsage;
+                                document.write(dataUsage + '%');
+                            </script>
+                        </div>
+                        <span class="inline-block dark:text-white text-black font-semibold text-lg mt-4">{{ user.username }}</span>
+                        <span class="px-4 py-2 rounded-full inline-block shadow-md shadow-green-900 font-bold text-gray-200 mt-4
+                            {% if user.status.value == 'active' %}bg-green-500
+                            {% elif user.status.value == 'limited' %}bg-red-600
+                            {% elif user.status.value == 'expired' %}bg-orange-600
+                            {% else %}bg-gray-600{% endif %}">
+                            {% if user.status.value == 'active' %}Active
+                            {% elif user.status.value == 'limited' %}Limited
+                            {% elif user.status.value == 'expired' %}Expired
+                            {% else %}Disabled{% endif %}
+                        </span>
+                    </div>
+                    <div class="flex flex-row items-center sm:pl-9" style="flex-basis: 66.666667%;">
+                        <div class="data-usage w-full">
+                            <div class="dark:text-white text-black text-center mb-2">
+                                <span class="font-bold">Data Usage: </span>
+                                <span dir="ltr">{{ user.used_traffic | bytesformat }} / {% if not user.data_limit %}∞{% else %}{{ user.data_limit | bytesformat }}{% endif %}</span>
+                            </div>
+                            <div class="dark:text-white text-black mt-4 text-center">
+                                <span class="font-bold">Expiration Date: </span>
+                                <span dir="ltr">{% if not user.expire %}∞{% else %}{{ user.expire | datetime }}{% endif %}</span>
+                            </div>
+                            <div class="dark:text-white text-black mt-3 text-sm text-center">
+                                {% if user.data_limit_reset_strategy.value == 'year' %}(Resets Every Year)
+                                {% elif user.data_limit_reset_strategy.value == 'month' %}(Resets Every Month)
+                                {% elif user.data_limit_reset_strategy.value == 'week' %}(Resets Every Week)
+                                {% elif user.data_limit_reset_strategy.value == 'day' %}(Resets Every Day)
+                                {% endif %}
+                            </div>
+                            <div class="dark:text-white text-black mt-5 text-center">
+                                <span class="font-bold">Remaining Days: </span>
+                                <span>{% if not user.expire %}∞{% else %}{% set remaining_days = ((user.expire - now().timestamp()) // (24 * 3600)) %}({{ remaining_days | int if (remaining_days | int) > -1 else 0 }}){% endif %}</span>
+                                <span> Days</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- My Configs Section -->
+                <div class="flex flex-col gap-y-4 mb-8 text-white text-sm sm:text-base">
+                    <h2 class="my-4 text-3xl font-black leading-none tracking-tight text-white md:text-5xl">My Configs</h2>
+                    <p class="text-lg font-normal mb-4 text-gray-300 lg:text-xl">Access your configurations individually. You can share each through QR Code or copy them directly.</p>
+                    
+                    <div class="dark:text-white bg-gradient-to-r dark:from-gray-600 dark:via-gray-700 dark:to-gray-800 from-slate-100 via-slate-200 to-slate-300 text-black transition-all duration-300 font-medium rounded-2xl">
+                        <div class="p-4 pb-6">
+                            <div id="configs_section" style="direction: ltr;" class="flex flex-col gap-y-2 pt-4">
+                                <button id="copyBtn" class="flex mb-4 items-center justify-between bg-slate-950 px-4 py-3 text-center rounded-lg">
+                                    <lord-icon src="https://cdn.lordicon.com/nocovwne.json" trigger="loop" delay="2000" colors="primary:#fff,secondary:#fff" class="w-10 h-10"></lord-icon>
+                                    <span id="copyText">Copy All Configs</span>
+                                    <lord-icon src="https://cdn.lordicon.com/nocovwne.json" trigger="loop" delay="2000" colors="primary:#fff,secondary:#fff" class="w-10 h-10"></lord-icon>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Support Section -->
+                    <h2 class="mb-4 mt-8 text-3xl font-black leading-none tracking-tight text-white md:text-5xl">Telegram Support</h2>
+                    <p class="text-lg font-normal mb-4 text-gray-300 lg:text-xl">If there are any problems with subscription, please contact support on Telegram.</p>
+                    <div class="flex flex-col gap-y-4">
+                        <h2 class="font-bold text-white text-2xl mb-2">Support</h2>
+                        <a href="https://t.me/Deki_niswara" class="py-3 px-4 transition-all duration-200 inline-flex gap-x-3 justify-center text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" class="w-6 h-6 fill-white" viewBox="0 0 50 50">
+                                <path d="M25,2c12.703,0,23,10.297,23,23S37.703,48,25,48S2,37.703,2,25S12.297,2,25,2z M32.934,34.375	c0.423-1.298,2.405-14.234,2.65-16.783c0.074-0.772-0.17-1.285-0.648-1.514c-0.578-0.278-1.434-0.139-2.427,0.219	c-1.362,0.491-18.774,7.884-19.78,8.312c-0.954,0.405-1.856,0.847-1.856,1.487c0,0.45,0.267,0.703,1.003,0.966	c0.766,0.273,2.695,0.858,3.834,1.172c1.097,0.303,2.346,0.04,3.046-0.395c0.742-0.461,9.305-6.191,9.92-6.693	c0.614-0.502,1.104,0.141,0.602,0.644c-0.502,0.502-6.38,6.207-7.155,6.997c-0.941,0.959-0.273,1.953,0.358,2.351	c0.721,0.454,5.906,3.932,6.687,4.49c0.781,0.558,1.573,0.811,2.298,0.811C32.191,36.439,32.573,35.484,32.934,34.375z"></path>
+                            </svg>
+                            <span class="sm:text-lg">Support</span>
+                        </a>
+                    </div>
+
+                    <!-- QR Code Button -->
+                    <div class="flex mt-6 items-center justify-center gap-x-4 mb-4">
+                        <button onclick="openDynamicModal('{{ user.username }} Subscription', window.location.href)" class="bg-gray-100 dark:bg-gray-700 rounded-xl pt-1 px-1">
+                            <lord-icon src="https://cdn.lordicon.com/fqrjldna.json" trigger="loop" delay="2000" colors="primary:#000,secondary:#000" class="w-10 h-10"></lord-icon>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
